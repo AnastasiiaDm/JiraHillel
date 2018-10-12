@@ -1,22 +1,30 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Jira {
+
     private static WebDriver browser;
 
     public static void main(String[] args) throws InterruptedException {
 
-       openBrowser();
+        openBrowser();
 
         enterUserName();
 
-        checkTrue();
+        boolean isExistCreateButton = createButtonExistFail();
+        if (isExistCreateButton) {
+            createButtonExistSuccess();
+            createIssue();
+            clickCreateIssue();
+        }
 
-        createIssue();
-
-        checkCreateSuccess ();
+        boolean isIssueCreate = issueCreateFail();
+        if (isIssueCreate) {
+            issueCreateSuccess();
+        }
 
         quit();
     }
@@ -29,50 +37,68 @@ public class Jira {
         Thread.sleep(1500);
     }
 
-    public static void quit(){
+    public static void quit() {
         browser.quit();
     }
 
     public static void enterUserName() throws InterruptedException {
 
         browser.findElement(By.cssSelector("input[id='login-form-username']")).sendKeys("autorob");
-
         browser.findElement(By.cssSelector("input[id='login-form-password']")).sendKeys("forautotests");
 
         browser.findElement(By.cssSelector("input[id='login']")).click();
         Thread.sleep(3000);
     }
 
-     public static void checkTrue() {
-         WebElement createButton = browser.findElement(By.cssSelector("a[id='create_link']"));
+    public static boolean createButtonExistFail() {
 
-         if (createButton.isEnabled()) {
-             System.out.println("Login Success");
-         } else {
-             System.out.println("не может быть !!!");
-         }
+        try {
+            browser.findElement(By.cssSelector("a[id='create_link']")).isEnabled();
+            return true;
+        } catch (NoSuchElementException e) {
+            System.out.println("\n" + "Login failed");
+            return false;
+        }
+    }
 
-     }
+    public static void createButtonExistSuccess() {
+        if (browser.findElement(By.cssSelector("a[id='create_link']")).isEnabled()) {
+            System.out.println("\n" + "Login Success");
+        }
+    }
 
-     public static void createIssue() throws InterruptedException {
-         browser.findElement(By.cssSelector("a[id='create_link']")).click();
-         Thread.sleep(3000);
+    public static void createIssue() throws InterruptedException {
+        browser.findElement(By.cssSelector("a[id='create_link']")).click();
+        Thread.sleep(3000);
 
-         WebElement summaryEnter = browser.findElement(By.cssSelector("input[id='summary']"));
-         summaryEnter.sendKeys("Test Nastya");
-     }
+        WebElement summaryEnter = browser.findElement(By.cssSelector("input[id='summary']"));
+        summaryEnter.sendKeys("Test Nastya");
+    }
 
-     public static void checkCreateSuccess () throws InterruptedException {
+    public static void clickCreateIssue() throws InterruptedException {
 
-         WebElement createClick = browser.findElement(By.cssSelector("input[id='create-issue-submit']"));
-         createClick.click();
-         Thread.sleep(3000);
+        WebElement createClick = browser.findElement(By.cssSelector("input[id='create-issue-submit']"));
+        createClick.click();
+        Thread.sleep(3000);
+    }
 
-         WebElement popupSuccess = browser.findElement(By.cssSelector("div[class='aui-message aui-message-success success closeable shadowed aui-will-close']"));
+    public static boolean issueCreateFail() {
+        try {
+            WebElement popupSuccess = browser.findElement(By.cssSelector("div[class='aui-message aui-message-success success closeable shadowed aui-will-close']"));
+            popupSuccess.isDisplayed();
+            return true;
+        } catch (NoSuchElementException e) {
+            System.out.println("\n" + "Create issue Failed");
+            return false;
+        }
+    }
 
-         if (popupSuccess.isDisplayed()){
-             System.out.println("\n" + "Issue created Successfully");
-         }
-     }
+    public static void issueCreateSuccess() {
 
+        WebElement popupSuccess = browser.findElement(By.cssSelector("div[class='aui-message aui-message-success success closeable shadowed aui-will-close']"));
+
+        if (popupSuccess.isDisplayed()) {
+            System.out.println("\n" + "Issue created Successfully");
+        }
+    }
 }
