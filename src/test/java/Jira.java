@@ -30,7 +30,7 @@ public class Jira {
     }
 
     public static void openBrowser() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Nasik\\для Java\\chromedriver.exe");
         browser = new ChromeDriver();
         browser.get("http://jira.hillel.it:8080/");
         browser.manage().window().maximize();
@@ -44,10 +44,16 @@ public class Jira {
     public static void enterUserName() throws InterruptedException {
 
         browser.findElement(By.cssSelector("input[id='login-form-username']")).sendKeys("autorob");
-        browser.findElement(By.cssSelector("input[id='login-form-password']")).sendKeys("forautotests");
+        WebElement inputPass =  browser.findElement(By.cssSelector("input[id='login-form-password']"));
 
-        browser.findElement(By.cssSelector("input[id='login']")).click();
-        Thread.sleep(3000);
+//       ввести текст + Enter
+        inputPass.sendKeys("forautotests\n");
+
+//        нажать на активную кнопку
+//        inputPass.submit();
+
+//        browser.findElement(By.cssSelector("input[id='login']")).click();
+//        Thread.sleep(3000);
     }
 
     public static boolean createButtonExistFail() {

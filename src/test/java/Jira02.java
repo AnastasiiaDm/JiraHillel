@@ -19,7 +19,6 @@ public class Jira02 {
         openBrowser();
         login();
         createIssue();
-
         quit();
     }
 
