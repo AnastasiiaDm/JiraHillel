@@ -6,4 +6,9 @@ public interface TestData {
     String username = "autorob";
     String pass = "forautotests";
     String badPass = "baspass";
+
+    String newIssueSummary = "AutoTest " + Helper.timeStamp();
+    String attachmentFileLocation = "C:\\Users\\ASUS\\Desktop\\";
+    String attachmentFileName = "JIRAlogo.jpg";
+    String downloadedFileLocation = "C:\\Users\\ASUS\\Downloads";
 }

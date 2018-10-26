@@ -8,7 +8,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Helper {
-    private static WebDriver browser;
+    private WebDriver browser;
+
     Helper (WebDriver currentBrowser){
         browser = currentBrowser;
     }
