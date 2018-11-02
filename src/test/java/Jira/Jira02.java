@@ -11,24 +11,14 @@ import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class Jira02 extends TestBase{
+public class Jira02 extends TestBase {
     static String newIssuePath;
     static String newIssueSummary = "AutoTest " + Helper.timeStamp();
-    static String attachmentLink;
     static String downloadedFileName;
 
-    private static void login(boolean correctPass) {
-
-        String pass = (correctPass ? TestData.pass : TestData.badPass) + "\n";
-        browser.get(TestData.baseURL);
-
-        h.findAndFill(By.cssSelector("input#login-form-username"), TestData.username);
-        h.findAndFill(By.cssSelector("input#login-form-password"), pass);
-    }
-
-    @Test()
+    @Test(priority = -1)
     public static void loginFail() {
-        login(false);
+        Actions.login(false);
 
         // Some error message is present
         List<WebElement> errorMessages = browser.findElements(By.cssSelector("div#usernameerror"));
@@ -42,9 +32,9 @@ public class Jira02 extends TestBase{
         System.out.println("Login failed, username not present");
     }
 
-    @Test()
+    @Test(priority = 1)
     public static void loginSuccess() {
-        login(true);
+        Actions.login(true);
 
         List<WebElement> buttonProfile = browser.findElements(By.cssSelector("a#header-details-user-fullname"));
         Assert.assertTrue(
@@ -58,12 +48,7 @@ public class Jira02 extends TestBase{
        createButton.click();
         h.findAndFill(By.cssSelector("input#project-field"), "General QA Robert (GQR)\n");
 
-        new FluentWait<>(browser)
-                .withTimeout(Duration.ofSeconds(7))
-                .pollingEvery(Duration.ofMillis(500))
-                .ignoring(InvalidElementStateException.class)
-                .until(browser -> h.findAndFill(By.cssSelector("input#summary"), newIssueSummary))
-                .submit();
+       Actions.summarySubmit();
 
         List<WebElement> linkNewIssues = browser.findElements(By.cssSelector("a[class='issue-created-key issue-link']"));
 
@@ -88,17 +73,7 @@ public class Jira02 extends TestBase{
                 .findElement(By.cssSelector("input.issue-drop-zone__file"))
                 .sendKeys(TestData.attachmentFileLocation + TestData.attachmentFileName);
 
-        WebElement linkAttachment =
-                new FluentWait<>(browser)
-                        .withTimeout(Duration.ofSeconds(10))
-                        .pollingEvery(Duration.ofSeconds(2))
-                        .ignoring(NoSuchElementException.class)
-                        .until(browser ->
-                                browser.findElement(By.cssSelector("a.attachment-title")));
-
-        Assert.assertEquals(TestData.attachmentFileName,  linkAttachment.getText());
-
-        attachmentLink = linkAttachment.getAttribute("href");
+        Actions.linkAttachment();
     }
 
     @Test (dependsOnMethods = {"uploadFile"})
