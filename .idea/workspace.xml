@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c48a0dc-12a5-47b9-8d63-2e9568fb8fb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Jira/Actions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/Actions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Jira/Jira02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/Jira02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/TestBase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,7 +19,7 @@
     <session id="-1477005374">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.108" value="1" />
           <entry key="project.open.time.148" value="1" />
@@ -26,11 +27,12 @@
           <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.70" value="1" />
+          <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.72" value="2" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.82" value="3" />
           <entry key="project.open.time.96" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,14 +53,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="basicRun" value="28" />
-          <entry key="java" value="2382" />
+          <entry key="java" value="2727" />
           <entry key="txt" value="103" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2382" />
+          <entry key="JAVA" value="2727" />
           <entry key="PLAIN_TEXT" value="103" />
           <entry key="XML" value="32" />
         </counts>
@@ -70,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Jira/Helper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-end-line="11" />
+            <state relative-caret-position="85">
+              <caret line="10" column="23" selection-start-line="10" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,10 +84,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Jira/Jira02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+            <state relative-caret-position="-255">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Jira/Actions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-173">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="1031">
+              <caret line="65" column="15" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="65" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Jira/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-end-line="13" />
+            <state relative-caret-position="205">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,12 +178,12 @@
         <option value="$PROJECT_DIR$/src/test/java/Jira/Jira01.java" />
         <option value="$PROJECT_DIR$/src/test/java/Jira/Helper.java" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6384.43942/Helper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Jira/TestBase.java" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6384.25306/TestData.java" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6384.1994/AppTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Jira/TestData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Jira/Actions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Jira/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/Jira/Jira02.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Jira/Actions.java" />
       </list>
     </option>
   </component>
@@ -192,11 +196,16 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Jira" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -256,7 +265,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541185107764" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541516726792" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -297,21 +306,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Jira02" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Jira02.createIssue" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JiraHillel" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Jira02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Jira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Jira" />
+      <option name="MAIN_CLASS_NAME" value="Jira.Jira02" />
+      <option name="METHOD_NAME" value="createIssue" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Jira02.login" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Jira02.downloadFile" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JiraHillel" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Jira02" />
-      <option name="METHOD_NAME" value="login" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Jira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Jira" />
+      <option name="MAIN_CLASS_NAME" value="Jira.Jira02" />
+      <option name="METHOD_NAME" value="downloadFile" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -337,10 +360,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JiraRob2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Jira02.uploadFile" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JiraHillel" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Jira.JiraRob2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Jira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Jira" />
+      <option name="MAIN_CLASS_NAME" value="Jira.Jira02" />
+      <option name="METHOD_NAME" value="uploadFile" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -348,19 +379,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.Jira02" />
-      <item itemvalue="TestNG.JiraRob2" />
-      <item itemvalue="TestNG.Jira02.login" />
       <item itemvalue="TestNG.Jira02 (1)" />
       <item itemvalue="TestNG.Jira02.openIssue" />
+      <item itemvalue="TestNG.Jira02.createIssue" />
+      <item itemvalue="TestNG.Jira02.downloadFile" />
+      <item itemvalue="TestNG.Jira02.uploadFile" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Jira02 (1)" />
+        <item itemvalue="TestNG.Jira02.uploadFile" />
+        <item itemvalue="TestNG.Jira02.downloadFile" />
+        <item itemvalue="TestNG.Jira02.createIssue" />
         <item itemvalue="TestNG.Jira02.openIssue" />
-        <item itemvalue="TestNG.Jira02" />
-        <item itemvalue="TestNG.Jira02.login" />
-        <item itemvalue="TestNG.JiraRob2" />
       </list>
     </recent_temporary>
   </component>
@@ -407,39 +438,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Jira02_(1) - 2018.10.25 at 18h 36m 39s.xml">
+    <history-entry file="Jira02_(1) - 2018.11.06 at 16h 04m 50s.xml">
       <configuration name="Jira02 (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Jira02_(1) - 2018.10.25 at 18h 40m 16s.xml">
+    <history-entry file="Jira02_(1) - 2018.11.06 at 16h 15m 22s.xml">
       <configuration name="Jira02 (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Jira02_(1) - 2018.10.25 at 18h 44m 34s.xml">
+    <history-entry file="Jira02_(1) - 2018.11.06 at 16h 39m 05s.xml">
       <configuration name="Jira02 (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Jira02_(1) - 2018.10.25 at 18h 48m 05s.xml">
+    <history-entry file="Jira02_(1) - 2018.11.06 at 16h 46m 05s.xml">
       <configuration name="Jira02 (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Jira02_(1) - 2018.10.26 at 16h 06m 08s.xml">
+    <history-entry file="Jira02_(1) - 2018.11.06 at 16h 48m 51s.xml">
       <configuration name="Jira02 (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Jira02_(1) - 2018.10.26 at 16h 08m 01s.xml">
+    <history-entry file="Jira02_createIssue - 2018.11.06 at 16h 50m 50s.xml">
+      <configuration name="Jira02.createIssue" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Jira02_downloadFile - 2018.11.06 at 16h 51m 19s.xml">
+      <configuration name="Jira02.downloadFile" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Jira02_uploadFile - 2018.11.06 at 16h 51m 38s.xml">
+      <configuration name="Jira02.uploadFile" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Jira02_(1) - 2018.11.06 at 16h 52m 43s.xml">
       <configuration name="Jira02 (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Jira02_(1) - 2018.10.26 at 16h 48m 35s.xml">
-      <configuration name="Jira02 (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Jira02_(1) - 2018.10.26 at 16h 49m 44s.xml">
-      <configuration name="Jira02 (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Jira02_(1) - 2018.10.26 at 16h 51m 20s.xml">
-      <configuration name="Jira02 (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Jira02_(1) - 2018.10.26 at 16h 55m 49s.xml">
+    <history-entry file="Jira02_(1) - 2018.11.06 at 17h 02m 37s.xml">
       <configuration name="Jira02 (1)" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="20" width="1346" height="688" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.13608088" />
@@ -451,7 +482,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.06546645" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.09549549" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.31423897" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,7 +490,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.23076923" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32972974" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32792792" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -467,10 +498,10 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32970452" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13608088" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13608088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -479,7 +510,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.06546645" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.09549549" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.31423897" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -487,7 +518,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.23076923" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32972974" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32792792" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -495,7 +526,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32970452" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -616,16 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraRob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6384.1994/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
@@ -640,30 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraRob2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Jira/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-end-line="13" />
+        <state relative-caret-position="85">
+          <caret line="10" column="23" selection-start-line="10" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -677,10 +678,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraRob2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraRob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Jira/Actions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="1031">
+          <caret line="65" column="15" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="65" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -689,10 +720,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Jira/Jira02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+        <state relative-caret-position="-255">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
           </folding>
         </state>
       </provider>
