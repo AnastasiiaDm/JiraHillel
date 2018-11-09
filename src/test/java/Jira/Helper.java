@@ -11,17 +11,17 @@ public class Helper {
     private WebDriver browser;
 
     Helper (WebDriver currentBrowser){
+
         browser = currentBrowser;
     }
 
-    public  WebElement findAndFill(By selector, String value) {
+    public  WebElement fill (WebElement selector, String value) {
 
-        WebElement elem = browser.findElement(selector);
-        elem.sendKeys(value);
-        return elem;
+        selector.sendKeys(value);
+        return selector;
     }
     public static String timeStamp() {
-        return new SimpleDateFormat("dd/MM/yy HH:mm").format(new Date());
+        return new SimpleDateFormat(TestData.date).format(new Date());
     }
 
 }

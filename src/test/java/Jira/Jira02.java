@@ -2,47 +2,46 @@ package Jira;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class Jira02 extends TestBase {
-    static String downloadedFileName;
+    static JiraActions steps = PageFactory.initElements(browser, JiraActions.class);
 
    @Test(priority = -1)
     public static void loginFail() {
-        Actions.login(false);
 
-        Actions.loginFailCheck();
+       steps.loginFailCheck();
     }
 
     @Test(priority = 1)
     public static void loginSuccess() {
-        Actions.login(true);
 
-        Actions.loginSuccessCheck();
+        steps.loginSuccessCheck();
     }
 
     @Test(dependsOnMethods = {"loginSuccess"})
     public static void createIssue() {
 
-        Actions.projectSelect();
+        steps.projectSelect();
 
-        Actions.waitSummarySubmit();
+        steps.waitSummarySubmit();
 
-        Actions.createIssueCheck();
+        steps.createIssueCheck();
     }
 
     @Test(dependsOnMethods = {"createIssue"})
     public static void openIssue() {
-        Actions.openIssueCheck();
+        steps.openIssueCheck();
     }
 
     @Test(dependsOnMethods = {"openIssue"})
     public void uploadFile() {
-        Actions.uploadFileCheck();
-        Actions.waitLinkAttachment();
+        steps.uploadFileCheck();
+        steps.waitLinkAttachment();
     }
 
     @Test(dependsOnMethods = {"uploadFile"})

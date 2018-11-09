@@ -11,4 +11,11 @@ public interface TestData {
     String attachmentFileLocation = "C:\\Users\\ASUS\\Desktop\\";
     String attachmentFileName = "JIRAlogo.jpg";
     String downloadedFileLocation = "C:\\Users\\ASUS\\Downloads";
+
+    String userNameCSS = "data-username";
+    String userName = "autorob";
+    String projectName = "General QA Robert (GQR)\n";
+
+    String date = "dd/MM/yy HH:mm";
+
 }

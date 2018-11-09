@@ -20,8 +20,6 @@ public class TestBase {
         browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
-        h = new Helper(browser);
     }
 
 //    @AfterTest
