@@ -4,12 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class Jira02 extends TestBase {
-    static JiraActions steps = PageFactory.initElements(browser, JiraActions.class);
+    static JiraActions steps;
+
+    @BeforeTest
+    public static void init(){
+        steps = PageFactory.initElements(browser, JiraActions.class);
+    }
 
    @Test(priority = -1)
     public static void loginFail() {
