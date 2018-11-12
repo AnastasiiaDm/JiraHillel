@@ -9,18 +9,18 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Jira02 extends TestBase {
+public class JiraTests extends TestBase {
     static JiraActions steps;
 
     @BeforeTest
-    public static void init(){
+    public static void init() {
         steps = PageFactory.initElements(browser, JiraActions.class);
     }
 
-   @Test(priority = -1)
+    @Test(priority = -1)
     public static void loginFail() {
 
-       steps.loginFailCheck();
+        steps.loginFailCheck();
     }
 
     @Test(priority = 1)

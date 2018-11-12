@@ -2,6 +2,7 @@ package Jira;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -16,6 +17,9 @@ public class TestBase {
     @BeforeTest
     public static void openBrowser() {
         setProperty("webdriver.chrome.driver", "D:\\Nasik\\для Java\\chromedriver.exe");
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
 
         browser = new ChromeDriver();
         browser.manage().window().maximize();
