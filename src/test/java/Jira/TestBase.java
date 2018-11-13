@@ -10,6 +10,8 @@ import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -65,10 +67,14 @@ public class TestBase {
 
         Map data = new HashMap();
         data.put("name", "QQQQQQQQ");
+        data.put("include_all", false);
 
         JSONObject c = (JSONObject) client.sendPost("add_run/1", data) ;
+        ArrayList<Integer> caseIds = new ArrayList<>();
 
-        c.put("case", 1);
+        caseIds.add(1);
+        caseIds.add(2);
+        c.put("case_ids", caseIds);
 
         System.out.println(c.get("title"));
 
