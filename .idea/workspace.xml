@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c48a0dc-12a5-47b9-8d63-2e9568fb8fb3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRail/APIClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRail/APIException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/Jira02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/JiraTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/JiraActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/JiraActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Jira/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testRuns/basicRun" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testRuns/basicRun.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Jira/Jira02.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,11 +22,12 @@
     <session id="-1477005374">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.108" value="1" />
           <entry key="project.open.time.148" value="1" />
           <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.70" value="1" />
@@ -34,35 +38,35 @@
           <entry key="project.open.time.80" value="1" />
           <entry key="project.open.time.82" value="3" />
           <entry key="project.open.time.96" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="basicRun" value="2" />
           <entry key="class" value="4" />
-          <entry key="java" value="24" />
-          <entry key="xml" value="6" />
+          <entry key="java" value="26" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="24" />
-          <entry key="XML" value="8" />
+          <entry key="JAVA" value="26" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="basicRun" value="36" />
-          <entry key="java" value="3361" />
+          <entry key="java" value="3565" />
           <entry key="txt" value="103" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3361" />
+          <entry key="JAVA" value="3565" />
           <entry key="PLAIN_TEXT" value="103" />
           <entry key="XML" value="41" />
         </counts>
@@ -74,12 +78,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="102">
+              <caret line="12" column="18" selection-start-line="12" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1087">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="831">
+              <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3214#3215#0" expanded="true" />
@@ -99,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testRuns/basicRun.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -109,11 +111,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Jira/Helper.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="24" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="478">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestRail/APIClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="215" selection-start-line="215" selection-end-line="215" />
               <folding>
+                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -121,10 +133,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestRail/APIException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="17" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Jira/Helper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="24" selection-start-line="17" selection-start-column="3" selection-end-line="20" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Jira/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="257">
+              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/test/java/JiraRob.java" />
         <option value="$PROJECT_DIR$/src/test/java/JiraRob2.java" />
         <option value="$PROJECT_DIR$/src/test/java/testRuns/basicRun" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Jira02.java" />
         <option value="$PROJECT_DIR$/src/test/java/Jira.java" />
         <option value="$PROJECT_DIR$/src/test/java/Jira/Jira01.java" />
@@ -168,14 +203,15 @@
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6384.25306/TestData.java" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6384.1994/AppTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Jira/Actions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Jira/JiraActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/Jira/TestData.java" />
         <option value="$PROJECT_DIR$/src/test/java/Jira/Helper.java" />
         <option value="$PROJECT_DIR$/src/test/java/Jira/Jira02.java" />
         <option value="$PROJECT_DIR$/src/test/testRuns/basicRun" />
         <option value="$PROJECT_DIR$/src/test/java/Jira/JiraTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Jira/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/testRuns/basicRun.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Jira/JiraActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Jira/TestBase.java" />
       </list>
     </option>
   </component>
@@ -208,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,6 +274,22 @@
               <item name="JiraHillel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Jira" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JiraHillel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JiraHillel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="TestRail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JiraHillel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JiraHillel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="testRuns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,12 +313,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542052735366" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SlackHillel" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542136685183" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -275,6 +327,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Nasik\AQA\JiraHillel\src\test\java\TestRail" />
       <recent name="D:\Nasik\AQA\JiraHillel\src\test" />
     </key>
   </component>
@@ -290,7 +343,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Nasik/AQA/JiraHillel/src/test/testRuns/basicRun.xml">
+  <component name="RunManager" selected="Application.TestBase">
+    <configuration name="TestBase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Jira.TestBase" />
+      <module name="JiraHillel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Jira.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="D:/Nasik/AQA/JiraHillel/src/test/testRuns/basicRun.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JiraHillel" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testRuns/basicRun.xml" />
@@ -353,38 +419,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Jira02.uploadFile" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JiraHillel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Jira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Jira" />
-      <option name="MAIN_CLASS_NAME" value="Jira.Jira02" />
-      <option name="METHOD_NAME" value="uploadFile" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.Jira02 (1)" />
       <item itemvalue="TestNG.Jira02.createIssue" />
-      <item itemvalue="TestNG.Jira02.uploadFile" />
       <item itemvalue="TestNG.Jira02.loginFail" />
       <item itemvalue="TestNG.D:/Nasik/AQA/JiraHillel/src/test/testRuns/basicRun.xml" />
+      <item itemvalue="Application.TestBase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestBase" />
         <item itemvalue="TestNG.D:/Nasik/AQA/JiraHillel/src/test/testRuns/basicRun.xml" />
         <item itemvalue="TestNG.Jira02 (1)" />
         <item itemvalue="TestNG.Jira02.createIssue" />
         <item itemvalue="TestNG.Jira02.loginFail" />
-        <item itemvalue="TestNG.Jira02.uploadFile" />
       </list>
     </recent_temporary>
   </component>
@@ -463,10 +511,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8265993" visible="true" weight="0.18558282" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8265993" weight="0.18835099" />
       <window_info id="Structure" order="1" sideWeight="0.17340067" side_tool="true" weight="0.18078668" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -475,7 +523,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.06546645" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.35679215" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.3371522" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -494,7 +542,7 @@
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32970452" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8265993" visible="true" weight="0.1860817" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8265993" visible="true" weight="0.18835099" />
       <window_info id="Structure" order="1" sideWeight="0.17340067" side_tool="true" weight="0.18078668" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -503,7 +551,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.06546645" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.35679215" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.062193125" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -647,15 +695,55 @@
     <entry file="file://$PROJECT_DIR$/src/test/testRuns/basicRun" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="17" selection-start-line="22" selection-start-column="3" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="478">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRail/APIException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="255">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRail/APIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testRuns/basicRun.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="32" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3214#3215#0" expanded="true" />
+            <element signature="e#3311#3312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="18" selection-start-line="12" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -672,41 +760,20 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Jira/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="20" selection-end-column="24" />
+          <caret line="20" column="24" selection-start-line="17" selection-start-column="3" selection-end-line="20" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="257">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Jira/JiraActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1087">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3214#3215#0" expanded="true" />
-            <element signature="e#3311#3312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testRuns/basicRun.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" selection-end-line="9" selection-end-column="89" />
         </state>
       </provider>
     </entry>

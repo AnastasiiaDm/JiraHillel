@@ -46,6 +46,9 @@ public class JiraActions {
     @FindBy(css = "a.attachment-title")
     WebElement linkAttachment;
 
+    @FindBy(css = "input.selectionCheckbox[name='selected-1']")
+    WebElement checkBox1;
+
 
 
     public JiraActions(WebDriver browser) {
@@ -130,5 +133,10 @@ public class JiraActions {
         Assert.assertEquals(TestData.attachmentFileName, linkAttachment.getText());
 
         attachmentLink = linkAttachment.getAttribute("href");
+    }
+
+    public  void selectCheckBox(){
+        checkBox1.click();
+
     }
 }

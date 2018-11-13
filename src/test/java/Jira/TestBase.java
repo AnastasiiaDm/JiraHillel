@@ -1,11 +1,17 @@
 package Jira;
 
+import TestRail.APIClient;
+import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import static java.lang.System.setProperty;
@@ -26,9 +32,48 @@ public class TestBase {
         browser.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
     }
 
-//    @AfterTest
-//    public static void closeBrowser() {
-//        browser.quit();
-//
-//    }
+    @AfterTest
+    public static void closeBrowser() {
+        browser.quit();
+
+    }
+
+    @BeforeGroups(groups = { "Attachments" })
+    public static void prepareAttachment() throws IOException {
+        new File(TestData.attachmentFileName).createNewFile();
+    }
+
+    @AfterMethod
+    public static void reportDebugInfo(ITestResult testResult) {
+        String info = "";
+        info += testResult.getMethod().getDescription();
+        info += ": ";
+        info += testResult.isSuccess() ? "passed." : "failed.";
+
+        System.out.println(info);
+    }
+
+    @BeforeClass
+    public static void main(String[] args) throws Exception {
+
+//        APIClient client = new APIClient("http://<server>/testrail/");
+        APIClient client = new APIClient
+                ("https://hillel5.testrail.io/");
+
+        client.setUser("rvalek@intersog.com");
+        client.setPassword("hillel");
+
+        Map data = new HashMap();
+        data.put("name", "QQQQQQQQ");
+
+        JSONObject c = (JSONObject) client.sendPost("add_run/1", data) ;
+
+        c.put("case", 1);
+
+        System.out.println(c.get("title"));
+
+
+
+    }
+
 }
